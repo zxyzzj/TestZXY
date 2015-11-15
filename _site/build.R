@@ -3,7 +3,8 @@ local({
   baseurl = servr:::jekyll_config('.', 'baseurl', '/')
   knitr::opts_knit$set(base.url = baseurl)
   # fall back on 'kramdown' if markdown engine is not specified
-  markdown = servr:::jekyll_config('.', 'markdown', 'kramdown')
+  # markdown = servr:::jekyll_config('.', 'markdown', 'kramdown')
+  markdown = servr:::jekyll_config('kramdown')
   # see if we need to use the Jekyll render in knitr
   if (markdown == 'kramdown') {
     knitr::render_jekyll()
