@@ -2,7 +2,6 @@
 title: "Test"
 author: "TZ"
 date: "1 November, 2015"
-output: pdf_document
 ---
 
 ### 3. p270 Problem 3 (Bonus, not required)
